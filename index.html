@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Tailwind CSS</title>
     <link href="dist/output.css" rel="stylesheet"/>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
+
+
 <body>
     <!-- Header Start -->
      <header class="bg-transparent absolute top-0 left-0 w-full flex 
@@ -50,6 +55,10 @@
                         <li class="group">
                             <a href="#project" class="text-base text-black py-2
                             mx-8 flex group-hover:text-primary">Project</a>
+                        </li>
+                        <li class="group">
+                            <a href="#sertifikat" class="text-base text-black py-2
+                            mx-8 flex group-hover:text-primary">Sertifikat</a>
                         </li>
                         <li class="group">
                             <a href="#contact" class="text-base text-black py-2
@@ -107,7 +116,7 @@
                mb-3">Tentang Saya</h4>
                <h2 class="font-bold text-slate-950 text-3xl mb-5 max-w-md
                lg:text-4xl">Saya Merupakan Mahasiswa Aktif Universitas Malikussaleh</h2>
-               <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Saya adalah Mahaiswa dari Jurusan Teknik, Prodi Teknik Informatika. Saat ini saya sedang menjalani semester 4. Hoby saya adalah badminton, saya juga suka belajar Pemrogaman.</p> 
+               <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Saya adalah Mahasiswa dari Jurusan Teknik, Prodi Teknik Informatika. Saat ini saya sedang menjalani semester 4. Hoby saya adalah badminton, saya juga suka belajar Pemrograman.</p> 
             </div>
             <div class="w-full px-4 lg:w-1/2">
                 <h3 class="font-semibold text-slate-950 text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
@@ -238,11 +247,6 @@
                 <h3 class="font-semibold text-xl text-black mt-5 mb-3">Kepanitiaan dalam acara PMW</h3>
                 <p class="font-medium text-base text-secondary">Saya menjadi panitia di acara PMW Universitas Malikussaleh 2025.</p>
             </div>
-
-            
-
-
-
         </div>
     </div>
    </section>
@@ -356,85 +360,330 @@
 
         <div class="flex flex-wrap">
 
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project1">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                mb-10">
-                  <img src="dist/img/portfolio/jpg6.png" alt="NetBeans" class="w-full">
-                  <div class="py-8 px-6">
-                    <h3>
-                        <a href="#" class="block mb-3 font-semibold text-xl
-                        text-black hover:text-primary truncate">Project Pertama</a></h3>
-                        <p class="font-medium text-base text-secondary mb-6">Project pertama saya adalah membuat aplikasi CRUD untuk data pertukaran Mahasiswa Internasional</p>
-                    <a href="https://drive.google.com/drive/folders/1egryIOhTwErdj3GctTERoojrLgkSvbwe?usp=drive_link" target="_blank" class="font-medium text-sm bg-primary py-2 px-4
-                    rounded-lg hover:opacity-80">Baca Selengkapnya</a>
-                  </div>
-                </div>
-            </div>
+<!-- Start Project 1 -->
+<div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project1">
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+    
+    <!-- Swiper Gallery -->
+    <div class="relative">
+      <!-- Main Swiper -->
+      <div class="swiper main-swiper-1 rounded-t-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="dist/img/projek1/1.png" class="w-full object-cover aspect-video" alt="Project Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek1/2.png" class="w-full object-cover aspect-video" alt="Project Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek1/3.png" class="w-full object-cover aspect-video" alt="Project Image 3">
+          </div>
+        </div>
+      </div>
 
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project2">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                mb-10">
-                  <img src="dist/img/portfolio/jpg7.png" alt="Portfolio" class="w-full">
-                  <div class="py-8 px-6">
-                    <h3>
-                        <a href="#" class="block mb-3 font-semibold text-xl
-                        text-black hover:text-primary truncate">Project Kedua</a></h3>
-                        <p class="font-medium text-base text-secondary mb-6">Project kedua saya adalah membuat web portofolio tentang saya</p>
-                    <a href="https://drive.google.com/file/d/1tuYgMaRSa-Cg0SKhYv8Z42bSql7081YI/view?usp=drive_link" class="font-medium text-sm bg-primary py-2 px-4
-                    rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+      <!-- Thumbnail Swiper -->
+      <div class="swiper thumb-swiper-1 mt-2 px-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek1/1.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 1">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek1/2.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 2">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek1/3.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 3">
+          </div>
+        </div>
+      </div>
+    </div>
 
-                  </div>
-                </div>
-            </div>
+    <!-- Deskripsi Project -->
+    <div class="py-8 px-6">
+      <h3>
+        <a href="#" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">
+          Project Pertama
+        </a>
+      </h3>
+      <p class="font-medium text-base text-secondary mb-6">
+        Project pertama saya adalah membuat website portofolio yang responsif untuk diri saya.
+      </p>
+      <a href="https://drive.google.com/drive/folders/1egryIOhTwErdj3GctTERoojrLgkSvbwe?usp=drive_link"
+         target="_blank"
+         class="font-medium text-sm bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition-all">
+         Baca Selengkapnya
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Project 1 -->
 
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project3">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                mb-10">
-                  <img src="dist/img/portfolio/logbook.jpg" alt="Project 3" class="w-full">
-                  <div class="py-8 px-6">
-                    <h3>
-                        <a href="#" class="block mb-3 font-semibold text-xl
-                        text-black hover:text-primary truncate">Project Ketiga</a></h3>
-                        <p class="font-medium text-base text-secondary mb-6">Project ketiga saya adalah membuat website logbook yang responsif </p>
-                    <a href="https://drive.google.com/file/d/1NKV_bA2FnUbH6phKiROo92NVhhhHK_O-/view?usp=drive_link" class="font-medium text-sm bg-primary py-2 px-4
-                    rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+<!-- Start Project 2 -->
+<div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project1">
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+    
+    <!-- Swiper Gallery -->
+    <div class="relative">
+      <!-- Main Swiper -->
+      <div class="swiper main-swiper-2 rounded-t-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="dist/img/projek2/5.jpg" class="w-full object-cover aspect-video" alt="Project Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek2/1.png" class="w-full object-cover aspect-video" alt="Project Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek2/2.png" class="w-full object-cover aspect-video" alt="Project Image 3">
+          </div>
+        </div>
+      </div>
 
-                  </div>
-                </div>
-            </div>
+      <!-- Thumbnail Swiper -->
+      <div class="swiper thumb-swiper-2 mt-2 px-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek2/5.jpg" class="w-full h-20 object-cover rounded-md" alt="Thumb 1">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek2/1.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 2">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek2/2.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 3">
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project4">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                mb-10">
-                  <img src="dist/img/portfolio/Bayyina.jpg" alt="Project 4" class="w-full">
-                  <div class="py-8 px-6">
-                    <h3>
-                        <a href="#" class="block mb-3 font-semibold text-xl
-                        text-black hover:text-primary truncate">Project Keempat</a></h3>
-                        <p class="font-medium text-base text-secondary mb-6">Project keempat saya adalah membuat website AL quran yang mengangkat tema untuk penderia PTSD</p>
-                    <a href="https://drive.google.com/file/d/1MnhS1efGf_WVebUl_9Oh_uHjHhWLS9To/view?usp=drive_link" class="font-medium text-sm bg-primary py-2 px-4
-                    rounded-lg hover:opacity-80">Sedang Tahap Pengembangan</a>
-                  </div>
-                </div>
-             </div>
-             <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project1">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                mb-10">
-                  <img src="dist/img/portfolio/Cara-pemesanan.png" alt="NetBeans" class="w-full">
-                  <div class="py-8 px-6">
-                    <h3>
-                        <a href="#" class="block mb-3 font-semibold text-xl
-                        text-black hover:text-primary truncate">Project Kelima</a></h3>
-                        <p class="font-medium text-base text-secondary mb-6">Project kelima saya adalah mengembangkan website tokoh online khusus pelaku PMW</p>
-                    <a href="#" target="_blank" class="font-medium text-sm bg-primary py-2 px-4
-                    rounded-lg hover:opacity-80">Sedang Tahap Pengembangan</a>
-                  </div>
-                </div>
-            </div>
+    <!-- Deskripsi Project -->
+    <div class="py-8 px-6">
+      <h3>
+        <a href="#" class="block mb-1 font-semibold text-xl text-black hover:text-primary truncate">
+          Project Kedua
+        </a>
+      </h3>
+      <p class="font-medium text-base text-secondary mb-2">
+        Project kedua saya adalah membuat website logbook untuk mencatat kegiatan sehari-hari pada perusahaan superteam academy.
+      </p>
+      <a href="https://drive.google.com/drive/folders/1egryIOhTwErdj3GctTERoojrLgkSvbwe?usp=drive_link"
+         target="_blank"
+         class="font-medium text-sm bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition-all">
+         Baca Selengkapnya
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Project 2 -->
+
+<!-- Start Project 3 -->
+<div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project1">
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+    
+    <!-- Swiper Gallery -->
+    <div class="relative">
+      <!-- Main Swiper -->
+      <div class="swiper main-swiper-2 rounded-t-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="dist/img/projek3/1.png" class="w-full object-cover aspect-video" alt="Project Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek3/4.png" class="w-full object-cover aspect-video" alt="Project Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek3/3.png" class="w-full object-cover aspect-video" alt="Project Image 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Thumbnail Swiper -->
+      <div class="swiper thumb-swiper-2 mt-2 px-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek3/1.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 1">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek3/2.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 2">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek3/4.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deskripsi Project -->
+    <div class="py-8 px-6">
+      <h3>
+        <a href="#" class="block font-semibold text-xl text-black hover:text-primary truncate">
+          Project Ketiga
+        </a>
+      </h3>
+      <p class="font-medium text-base text-secondary mb-1">
+        Project ketiga saya adalah membuat website Alquran yang dikhususkan bagi penderita PTSD yang kompleks menggunakan beberapa framework modern seperti laravel dan tailwind.
+      </p>
+      <a href="https://drive.google.com/drive/folders/1egryIOhTwErdj3GctTERoojrLgkSvbwe?usp=drive_link"
+         target="_blank"
+         class="font-medium text-sm bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition-all">
+         Baca Selengkapnya
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Project 3 -->
+
+<!-- Start Project 4 -->
+<div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="project1">
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+    
+    <!-- Swiper Gallery -->
+    <div class="relative">
+      <!-- Main Swiper -->
+      <div class="swiper main-swiper-2 rounded-t-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="dist/img/projek4/1.png" class="w-full object-cover aspect-video" alt="Project Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek4/2.png" class="w-full object-cover aspect-video" alt="Project Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/projek4/3.png" class="w-full object-cover aspect-video" alt="Project Image 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Thumbnail Swiper -->
+      <div class="swiper thumb-swiper-2 mt-2 px-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek4/1.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 1">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek4/2.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 2">
+          </div>
+          <div class="swiper-slide w-1/3">
+            <img src="dist/img/projek4/4.png" class="w-full h-20 object-cover rounded-md" alt="Thumb 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deskripsi Project -->
+    <div class="py-8 px-6">
+      <h3>
+        <a href="#" class="block mb-1 font-semibold text-xl text-black hover:text-primary truncate">
+          Project Keempat
+        </a>
+      </h3>
+      <p class="font-medium text-base text-secondary mb-6">
+        Project keempat saya adalah membuat website E-Commerce yang mudah digunakan oleh siapa saja, yang dikhususkan untuk pelaku PMW Universitas Malikussaleh.
+      </p>
+      <a href="https://drive.google.com/drive/folders/1egryIOhTwErdj3GctTERoojrLgkSvbwe?usp=drive_link"
+         target="_blank"
+         class="font-medium text-sm bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition-all">
+         Baca Selengkapnya
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Project 4 -->
+
+        
 
         </div>
      </section>
      <!-- Section Project End -->
+
+     <!-- Section Sertifikat Start -->
+     <section id="sertifikat" class="pt-36 pb-32 bg-slate-200">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="max-w-xl mx-auto text-center mb-16">
+        <h4 class="font-semibold text-lg text-primary mb-2">Sertifikat</h4>
+        <h2 class="font-bold text-black text-2xl mb-4 sm:text-4xl lg:text-5xl">Sertifikat Terbaru</h2>
+        <p class="font-medium text-md text-secondary md:text-lg">Saya akan menampilkan beberapa sertifikat terbaru saya yang telah saya peroleh.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap">
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="seminar">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+          <img src="dist/img/sertifikat/Seminar.jpg" alt="Seminar" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="#" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">Sertifikat Seminar</a>
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6">Saya mengikuti seminar "From Generation to Grounding: Electrical Engineering Practices in Malaysia".</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="icomden">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+          <img src="dist/img/sertifikat/Icomden.jpg" alt="Icomden" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="https://news.unimal.ac.id/index/single/6315/gelar-icomden-dan-iesc-2024-pembicara-dari-lima-negara-bahas-hilirisasi-teknologi-di-unimal" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">Sertifikat Icomden</a>
+            </h3>
+            <p class="font-normal text-base text-secondary">Saya menjadi bagian panitia dalam acara "THE 2ND INTERNATIONAL CONFERENCE ON MULTI DISCLIPLINARY ENGINEERING 2024".</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="iesc">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+          <img src="dist/img/sertifikat/iesc.jpg" alt="Iesc" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="https://news.unimal.ac.id/index/single/6315/gelar-icomden-dan-iesc-2024-pembicara-dari-lima-negara-bahas-hilirisasi-teknologi-di-unimal" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">Sertifikat IESC</a>
+            </h3>
+            <p class="font-medium text-base text-secondary">Saya menjadi bagian panitia dalam kegiatan "THE 2ND INTERNATIONAL ENGINEERING STUDENT CONFERENCE".</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="superteam">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+          <img src="dist/img/sertifikat/superteam.jpg" alt="Project 4" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="https://tracer.unimal.ac.id/berita/baca/18-onboarding-superteam-academy-batch-viii-2025-" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">Sertifikat Superteam</a>
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6">Saya melakukan kegiatan intern di Superteam Academy Batch 8.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="jobfair">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+          <img src="dist/img/sertifikat/jobfair.png" alt="jobfair" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="https://www.kataklik.com/2025/05/level-up-your-career-unimal-gelar-job.html" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">Sertifikat Job Fair</a>
+            </h3>
+            <p class="font-medium text-base text-secondary">Saya menjadi panitia dalam acara "Job Fair Universitas Malikussaleh 2025".</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="pmw">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+          <img src="dist/img/sertifikat/pmw.png" alt="pmw" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="https://www.instagram.com/p/DJbXJthBgns/?utm_source=ig_web_copy_link" class="block mb-3 font-semibold text-xl text-black hover:text-primary truncate">Sertifikat PMW</a>
+            </h3>
+            <p class="font-medium text-base text-secondary">Saya menjadi panitia dalam acara "PMW Universitas Malikussaleh 2025".</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+     <!-- Section Sertifikat End -->     
 
      <!-- Section Contact start -->
       <section id="contact" class="pt-36 pb-32">
@@ -585,5 +834,96 @@
        <!-- Section Footer End -->
 
 <script src="dist/js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  // Project 1
+  const thumbSwiper1 = new Swiper('.thumb-swiper-1', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  const mainSwiper1 = new Swiper('.main-swiper-1', {
+    spaceBetween: 10,
+    effect: 'fade', // atau 'slide', 'cube', dsb.
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    thumbs: {
+      swiper: thumbSwiper1,
+    },
+  });
+
+    // Project 2
+   const thumbSwiper2 = new Swiper('.thumb-swiper-2', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  const mainSwiper2 = new Swiper('.main-swiper-2', {
+    spaceBetween: 10,
+    effect: 'fade', // atau 'slide', 'cube', dsb.
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    thumbs: {
+      swiper: thumbSwiper1,
+    },
+  });
+
+//projek 3
+   const thumbSwiper3 = new Swiper('.thumb-swiper-3', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  const mainSwiper3 = new Swiper('.main-swiper-3', {
+    spaceBetween: 10,
+    effect: 'fade', // atau 'slide', 'cube', dsb.
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    thumbs: {
+      swiper: thumbSwiper3,
+    },
+  });
+
+  //projek 4
+   const thumbSwiper4 = new Swiper('.thumb-swiper-4', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  const mainSwiper4 = new Swiper('.main-swiper-4', {
+    spaceBetween: 10,
+    effect: 'fade', // atau 'slide', 'cube', dsb.
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    thumbs: {
+      swiper: thumbSwiper4,
+    },
+  });
+
+</script>
+
+
 </body>
 </html>
